@@ -1,0 +1,1 @@
+A collection of hash functions I've written while learning about them.
