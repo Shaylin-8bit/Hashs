@@ -54,13 +54,13 @@ unsigned long long int hash(char* key, unsigned long long int factor) {
         exit(EXIT_FAILURE);
     }
 
-    if ((sec_div = malloc(sizeof(char*) * u_sze)) == NULL) {
+    if ((sec_div = (char**)malloc(sizeof(char*) * u_sze)) == NULL) {
         fprintf(stderr, "Failed to allocate %lu bytes at %p for hash function.", sizeof(char*) * u_sze, sec_div);
         exit(EXIT_FAILURE);
     }
 
     for (i = 0; i < u_sze; i++) {
-        if ((sec_div[i] = malloc(sectors+1)) == NULL) {
+        if ((sec_div[i] = (char*)malloc(sectors+1)) == NULL) {
             fprintf(stderr, "Failed to allocate %lu bytes at %p for hash function.", sectors+1, sec_div[i]);
             exit(EXIT_FAILURE);
         }
@@ -80,7 +80,6 @@ unsigned long long int hash(char* key, unsigned long long int factor) {
         sub_result[i] = subhash(sec_div[i]);
     }
     memcpy(&result, sub_result, u_sze);
-    printf("%llu\n", result);
     
     // free up memory
     for (i = 0; i < u_sze; i++) free(sec_div[i]);
