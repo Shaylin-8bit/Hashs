@@ -1,7 +1,7 @@
 # ExtKComp
 
 <p>
-    The ExtKComp, or Extended Key Compilation, hash is an experimental hash I'm writing on top of the <a href="../Mulit/README.md"> hash </a>. It works on the principle of generating 64 bit sectors of numbers and then stacking them to create a single 8 byte value. This is my first attempt at a more reallistic hash, and hopefully will be an improved second hash design for my Cryptic program.
+    The ExtKComp, or Extended Key Compilation, hash is an experimental hash I'm writing on top of the <a href="../Mulit/README.md"> Mulit hash </a>. It works on the principle of generating 64 bit sectors of numbers and then stacking them to create a single 8 byte value. This is my first attempt at a more reallistic hash, and hopefully will be an improved second hash design for my Cryptic program.
 </p>
 
 * Warning:  At the date of this writing enought testing has not yet been done to truly say how effecient it actually is.
@@ -57,7 +57,7 @@ ________________________________________
 ```
 
 <p>
-    This is no compiled into a result by setting each byte, in an 8 byte number, to the result of Mulit on each column of the stack. So the first byte would be Mulit of `{107, -105, 23, 70, -95, -13, -3, -110}`. This results in:
+    This is then compiled into a result by setting each byte, in an 8 byte number, to the result of Mulit on each column of the stack. So the first byte would be Mulit of `{107, -105, 23, 70, -95, -13, -3, -110}`. This results in:
 </p>
 
 ```
