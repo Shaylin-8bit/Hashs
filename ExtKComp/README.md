@@ -83,9 +83,9 @@ ________________________________________
 * Third, this hash hasn't been put through rigorous testing yet, and there are almost certainly bugs in it that I haven't found yet.
 
 <p>
-    Given the above, please do not trust this hash to work in production code. I've written it for my eduacation, hopefully to inspire others, and just for the fun of it. I can't guarentee it will work consistently, effeciently, or at all.
+    Given the above, please do not trust this hash to work in production code. I've written it for my education, hopefully to inspire others, and just for the fun of it. I can't guarantee it will work consistently, efficiently, or at all.
 </p>
 
 <p>
-    All that being said, I hope to continue work on and imporove it as time goes on. Please provide feedback if you see a bug or just something that can be done better!
+    All that being said, I hope to continue work on and improve it as time goes on. Please provide feedback if you see a bug or just something that can be done better!
 </p>
